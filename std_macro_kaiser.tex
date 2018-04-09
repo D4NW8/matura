@@ -1,0 +1,86 @@
+%\input{C:/Users/Bene/Documents/Latex/pics/std_macro_kaiser.tex}
+
+
+	
+\newcommand{\ab}[1]{%
+	\protect\begin{itemize}%
+		#1%
+\protect\end{itemize}%
+}
+
+\newcommand{\spic}[2]{\includegraphics[scale=#1]{#2}}
+
+\newcommand{\cpic}[3]{%
+		\begin{figure}[H]
+			\centering
+		\includegraphics[scale=#1]{#2}
+		\caption{#3}
+	\end{figure}
+}
+
+\newcommand{\cmnt}[1]{}
+\renewcommand{\ni}{\noindent}
+\newcommand{\tbs}{\textbackslash}
+\newcommand{\RANDnote}[1]{\marginpar{\small\sl\color{mrgclr}#1}}
+\newcommand{\kommentar}[1]{\textit{\color{grau1}#1}}
+\newcommand{\np}{\vfill{\newpage}}
+\newcommand{\titel}[3]{
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.15\textwidth]{C:/Users/Bene/Documents/Latex/pics/logo.png}\par\vspace{1cm}
+	{\scshape\LARGE Höhere Technische  Lehranstalt\par}
+	\vspace{1cm}
+	{\scshape\Large #1\par} %was ist es für ein Bericht?
+	\vspace{1.5cm}
+	{\huge\bfseries #2\par} %wie lautet der Titel?
+	\vspace{2cm}
+	{\Large\itshape Kaiser Benedikt\par}
+	\vfill
+	Betreut von\par
+	Prof. \textsc{#3} %wer ist der Lehrer?
+	
+	\vfill
+	
+	% Bottom of the page
+	{\large \today\par}
+	
+	
+\end{titlepage}
+	\vfill{\newpage{}}
+\tableofcontents
+\newpage}
+
+\newcommand{\titelc}[4]{
+	\begin{titlepage}
+		\centering
+		\includegraphics[width=0.15\textwidth]{C:/Users/Bene/Documents/Latex/pics/logo.png}\par\vspace{1cm}
+		{\scshape\LARGE Höhere Technische  Lehranstalt\par}
+		\vspace{1cm}
+		{\scshape\Large #1\par} %was ist es für ein Bericht?
+		\vspace{1.5cm}
+		{\huge\bfseries #2\par} %wie lautet der Titel?
+		\vspace{2cm}
+		{\Large\itshape Kaiser Benedikt\par}
+		\vfill
+		Mitarbeiter: #3\par %wer ist der Mitarbeiter
+		\vfill
+		Betreut von\par
+		Prof. \textsc{#4} %wer ist der Lehrer?
+		
+		\vfill
+		
+		% Bottom of the page
+		{\large Ausgeführt am: \today\par}
+		{\large Abgegeben am: \today\par}
+		
+		
+	\end{titlepage}
+	\vfill{\newpage{}}
+	\tableofcontents
+	\newpage}
+%\setlength{\unitlength}{1mm}
+%\begin{picture}(120,80)(0,0)
+%\put(0,0){\vector(0,1){60}}
+%\put(0,0){\line(1,0){125}}
+%\put(0,0){\vector(1,0){125}}
+%\end{picture}

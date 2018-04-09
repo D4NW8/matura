@@ -1,0 +1,79 @@
+%\input{C:/Users/Bene/Documents/Latex/pics/std_kaiser.tex}
+
+
+
+
+\documentclass[11pt]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{ngerman}
+\usepackage{amsmath,amssymb,amstext}
+\usepackage{graphicx}
+%\usepackage[automark]{scrpage2}
+\usepackage{fancyhdr}
+\usepackage{textpos}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+%\usepackage{hyperref}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{xcolor}
+%\usepackage{pxfonts}
+\usepackage{verbatim}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{rotating}
+\usepackage[official]{eurosym}
+\definecolor{mrgclr}{rgb}{0.25,0,0}
+\definecolor{grau1}{rgb}{0.51,0.55,0.55}
+\definecolor{white}{rgb}{1,1,1}
+%\usepackage{fancyhdr}
+%\usepackage[T1]{fontenc}
+
+
+\addtolength{\voffset}{-20mm}
+\addtolength{\textheight}{25mm}
+%\pagestyle{scrheadings}
+
+
+	
+\newcommand{\HtlHeader}[0]{
+	\includegraphics[width=10.3mm]{/latex/pics/logo}
+	\hspace*{1mm}
+	\parbox[b]{110mm}{\flushleft
+		{\fontsize{20pt}{20pt}\selectfont\bf HTL}
+		{\fontsize{16.2pt}{16.2pt}\selectfont\color{teal}\bf anichstra"se}
+		\\[-4.05mm]{\color{darkgray}\rule{110mm}{0.5pt}}
+		\\[-2.24mm]{\fontsize{7pt}{7pt}\selectfont\color{darkgray}
+			Elektronik $\cdot$ Elektrotechnik $\cdot$
+			Maschinenbau $\cdot$ Wirtschaftsingenieure
+			\rule{0pt}{0mm}
+			%\vspace*{1.1mm}
+		}
+	}
+	\hspace*{2mm}
+	\raisebox{-0.2mm}{ \includegraphics[width=25mm]{/latex/pics/HTLgenlogo02}}
+	\\[-1.5mm]\rule{\textwidth}{0.5pt}
+	%\hfill
+}%HtlHeader
+
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	numbers=left,
+	tabsize=2,
+	frame=L,
+	xleftmargin=\parindent,
+	language=C,
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+}
+
+\lstset{escapechar=@,style=customc}
